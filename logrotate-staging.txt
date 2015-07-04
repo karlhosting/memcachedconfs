@@ -1,6 +1,6 @@
 ### Entry symlinked into ~osfkarl/logrotate.d/memcached
 
-/srv/osfkarl/memcachedconfs/var/log/*.log {
+/srv/karlstaging/memcachedconfs/var/log/*.log {
     daily
     missingok
     rotate 10

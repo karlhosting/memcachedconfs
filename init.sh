@@ -5,8 +5,8 @@
 set -e
 
 PATH="${PATH}:/usr/local/sbin:/usr/sbin:/sbin"
-DAEMON="${HOME}/memcachedconfs/bin/supervisord"
-CTL="${HOME}/memcachedconfs/bin/supervisorctl"
+DAEMON="${HOME}/memcachedconfs/bin/supervisord -c ${HOME}/memcachedconfs/production.conf"
+CTL="${HOME}/memcachedconfs/bin/supervisorctl -c ${HOME}/memcachedconfs/production.conf"
 PIDFILE="/run/local/supervisord-memcachedconfs.pid"
 
 start() {

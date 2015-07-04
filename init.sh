@@ -15,15 +15,15 @@ start() {
 }
 
 stop() {
-    "$CTL" shutdown
+    "$CTL" -c "$CONF" shutdown
 }
 
 restart() {
-    "$CTL" restart all
+    "$CTL" -c "$CONF" restart all
 }
 
 status() {
-    "$CTL" status
+    "$CTL" -c "$CONF" status
 }
 
 case $1 in
